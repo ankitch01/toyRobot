@@ -1,0 +1,2 @@
+# toyRobot
+rules :
