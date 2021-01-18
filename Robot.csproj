@@ -1,0 +1,81 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <TypeScriptToolsVersion>2.8</TypeScriptToolsVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="mochawesome-report\**" />
+    <Content Remove="mochawesome-report\**" />
+    <EmbeddedResource Remove="mochawesome-report\**" />
+    <None Remove="mochawesome-report\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="src\app\app.component.ts" />
+    <None Remove="src\app\app.module.ts" />
+    <None Remove="src\app\app.router.ts" />
+    <None Remove="src\app\components\commands\command-control.component.ts" />
+    <None Remove="src\app\components\commands\command-list.component.ts" />
+    <None Remove="src\app\components\commands\place-control.component.ts" />
+    <None Remove="src\app\components\home\home.component.ts" />
+    <None Remove="src\app\components\play-area\play-area.component.ts" />
+    <None Remove="src\app\components\report\report-list.component.ts" />
+    <None Remove="src\app\core\models\command-type.ts" />
+    <None Remove="src\app\core\models\command.ts" />
+    <None Remove="src\app\core\models\direction.ts" />
+    <None Remove="src\app\core\models\location.ts" />
+    <None Remove="src\app\core\models\place-command.ts" />
+    <None Remove="src\app\core\models\play-area.ts" />
+    <None Remove="src\app\core\models\robot.ts" />
+    <None Remove="src\app\core\services\command-service.factory.ts" />
+    <None Remove="src\app\core\services\command.service.ts" />
+    <None Remove="src\app\tests\command-service\execute-commands.spec.ts" />
+    <None Remove="src\app\tests\play-area\move-is-valid.spec.ts" />
+    <None Remove="src\app\tests\play-area\place-is-valid.spec.ts" />
+    <None Remove="src\app\tests\robot\move.spec.ts" />
+    <None Remove="src\app\tests\robot\place.spec.ts" />
+    <None Remove="src\app\tests\robot\report.spec.ts" />
+    <None Remove="src\app\tests\robot\turn.spec.ts" />
+    <None Remove="src\main.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.8" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="src\app\app.component.ts" />
+    <TypeScriptCompile Include="src\app\app.module.ts" />
+    <TypeScriptCompile Include="src\app\app.router.ts" />
+    <TypeScriptCompile Include="src\app\components\commands\command-control.component.ts" />
+    <TypeScriptCompile Include="src\app\components\commands\command-list.component.ts" />
+    <TypeScriptCompile Include="src\app\components\commands\place-control.component.ts" />
+    <TypeScriptCompile Include="src\app\components\home\home.component.ts" />
+    <TypeScriptCompile Include="src\app\components\play-area\play-area.component.ts" />
+    <TypeScriptCompile Include="src\app\components\report\report-list.component.ts" />
+    <TypeScriptCompile Include="src\app\core\models\command-type.ts" />
+    <TypeScriptCompile Include="src\app\core\models\command.ts" />
+    <TypeScriptCompile Include="src\app\core\models\direction.ts" />
+    <TypeScriptCompile Include="src\app\core\models\location.ts" />
+    <TypeScriptCompile Include="src\app\core\models\place-command.ts" />
+    <TypeScriptCompile Include="src\app\core\models\play-area.ts" />
+    <TypeScriptCompile Include="src\app\core\models\robot.ts" />
+    <TypeScriptCompile Include="src\app\core\services\command-service.factory.ts" />
+    <TypeScriptCompile Include="src\app\core\services\command.service.ts" />
+    <TypeScriptCompile Include="src\app\tests\command-service\execute-commands.spec.ts" />
+    <TypeScriptCompile Include="src\app\tests\play-area\move-is-valid.spec.ts" />
+    <TypeScriptCompile Include="src\app\tests\play-area\place-is-valid.spec.ts" />
+    <TypeScriptCompile Include="src\app\tests\robot\move.spec.ts" />
+    <TypeScriptCompile Include="src\app\tests\robot\place.spec.ts" />
+    <TypeScriptCompile Include="src\app\tests\robot\report.spec.ts" />
+    <TypeScriptCompile Include="src\app\tests\robot\turn.spec.ts" />
+    <TypeScriptCompile Include="src\main.ts" />
+  </ItemGroup>
+
+</Project>
