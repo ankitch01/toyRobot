@@ -1,0 +1,25 @@
+﻿
+<div class="row">
+    <div class="col-lg">
+        <h3>Commands</h3>
+        <div class="btn-group btn-group-lg" role="group">
+            <place-control (commandClick)="commandClicked($event);"></place-control>
+            <command-control [commandType]="commandTypes.Move" (commandClick)="commandClicked($event);"></command-control>
+            <command-control [commandType]="commandTypes.Left" (commandClick)="commandClicked($event);"></command-control>
+            <command-control [commandType]="commandTypes.Right" (commandClick)="commandClicked($event);"></command-control>
+            <command-control [commandType]="commandTypes.Report" (commandClick)="commandClicked($event);"></command-control>
+        </div>.
+        <br /><br />
+        <button value="Execute" (click)="executeClick();" class="btn btn-primary btn-lg btn-block">Execute</button>
+    </div>
+    <div class="col-sm">
+        <h3>Command List</h3>
+        <command-list [commandList]="service.commands"></command-list>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg">
+        <h3>Report List</h3>
+        <report-list [reportList]="service.reports"></report-list>
+    </div>
+</div>

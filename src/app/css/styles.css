@@ -1,0 +1,37 @@
+﻿.robot-north, .robot-south, .robot-west, .robot-east {
+    background-image: url('../images/robot-sprite.png');
+    background-repeat: no-repeat;
+}
+
+.robot-north {
+    height: 65px;
+    width: 50px;
+    background-position: 0px -65px;
+}
+
+.robot-east {
+    height: 65px;
+    width: 50px;
+    background-position: 0px -195px;
+}
+
+.robot-west {
+    height: 65px;
+    width: 50px;
+    background-position: 0px -260px;
+}
+
+.robot-south {
+    height: 65px;
+    width: 50px;
+    background-position: 0px -325px;
+}
+
+.playArea td {
+    border: 2px solid black;
+    padding: 15px;
+    margin: 15px;
+    width: 70px;
+    height: 70px;
+    border-spacing: 15px;
+}

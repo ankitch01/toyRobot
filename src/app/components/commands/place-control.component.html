@@ -1,0 +1,35 @@
+﻿<button value="Place" (click)="open(placeContent)" class="btn btn-light btn-lg">Place</button>
+
+<ng-template #placeContent let-c="close" let-d="dismiss">
+    <div class="modal-header">
+        <h4 class="modal-title" id="modal-basic-title">Place</h4>
+        <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="modal-body">
+        <div class="form-horizontal">
+            <div class="form-group">
+                <label for="xLocation">X Location</label>
+                <input name="xLocation" type="number" [(ngModel)]="xLocation" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label for="yLocation">Y Location</label>
+                <input name="yLocation" type="number" [(ngModel)]="yLocation" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label for="direction">Direction</label>
+                <div *ngFor="let heading of directionsValues">
+                    <input type="radio"
+                           [(ngModel)]="direction"
+                           [checked]="direction==heading"
+                           [value]="heading" />
+                    {{directions[heading]}}<br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-primary btn-lg btn-block" (click)="place();">Save</button>
+    </div>
+</ng-template>
